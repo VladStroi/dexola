@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+/* font-family: 'Kanit', sans-serif; */
+
+:root {
+  --color-font:  #FFFFFF;
+
+  --body-web-font: 'Roboto Mono', monospace;
+  --body-web-font-size: 18px;
+  --body-tablet-font: 'Roboto Mono', monospace;
+  --body-tablet-font-size: 16px;
+  --body-mobile-font: 'Roboto Mono', monospace;
+  --body-mobile-font-size: 14px;
+
+    --button-mobile-font-size: 14px;
+    --button-tablet-web-font-size: 16px;
+    --button-font: 'Roboto Mono', monospace;
+
+
+}

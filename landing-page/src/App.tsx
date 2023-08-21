@@ -1,11 +1,12 @@
 
 import './App.css'
+import { WelcomePage } from './sections/welcome-page/welcome-page'
 
 function App() {
 
   return (
     <>
-      hello
+      <WelcomePage/>
     </>
   )
 }

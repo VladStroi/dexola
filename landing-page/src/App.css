@@ -1,8 +1,45 @@
+@import './styles/colors.css';
+@import './styles/fonts.css';
+body {
+  max-width: 1920px;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
 #root {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
   /*  */
-  background-color: red;
+  color: var(--white-color);
+}
+
+p{
+  margin: 0;
+}
+
+button {
+  width: 235px;
+  height: 48px;
+  background-color: #272A2E;
+  font-family: var(--button-font);
+  font-size: var(--button-tablet-web-font-size);
+  color: var(--white-color);
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 480px) {
+  button {
+    width: 136px;
+    height: 40px;
+    font-size: var(--button-mobile-font-size);
+  }
 }
