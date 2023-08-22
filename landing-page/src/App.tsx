@@ -1,14 +1,14 @@
-
-import './App.css'
-import { WelcomePage } from './sections/welcome-page/welcome-page'
+import "./App.css";
+import { Header } from "./sections/header/header";
+import { HeroSection } from "./sections/welcome-page/hero";
 
 function App() {
-
   return (
     <>
-      <WelcomePage/>
+      <Header />
+      <HeroSection />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

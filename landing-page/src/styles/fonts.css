@@ -1,21 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
 
 /* font-family: 'Kanit', sans-serif; */
 
 :root {
-  --color-font:  #FFFFFF;
+  /* font-family */
+  --kanit-font-family: "Kanit", sans-serif;
+  --robotoMono-font-family: "Roboto Mono", monospace;
 
-  --body-web-font: 'Roboto Mono', monospace;
+  /* font-weight */
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* font color */
+  --color-font: #ffffff;
+
+  /* fonts style and size in title */
+
+  --title-tablet-font: var(--kanit-font-family);
+  --title-mobile-font: var(--kanit-font-family);
+  --title-tablet-font-size: 112px;
+  --title-mobile-font-size: 48px;
+
+  /* fonts style and size in subTitle */
+  --subTitle-web-font: var(--kanit-font-family);
+  --subTitle-tablet-font: var(--kanit-font-family);
+  --subTitle-mobile-font: var(--kanit-font-family);
+  --subTitle-web-font-size: 24px;
+  --subTitle-tablet-font-size: 20px;
+  --subTitle-mobile-font-size: 18px;
+
+  /* fonts style and size in body */
+  --body-web-font: var(--robotoMono-font-family);
+  --body-tablet-font: var(--robotoMono-font-family);
+  --body-mobile-font: var(--robotoMono-font-family);
   --body-web-font-size: 18px;
-  --body-tablet-font: 'Roboto Mono', monospace;
   --body-tablet-font-size: 16px;
-  --body-mobile-font: 'Roboto Mono', monospace;
   --body-mobile-font-size: 14px;
 
-    --button-mobile-font-size: 14px;
-    --button-tablet-web-font-size: 16px;
-    --button-font: 'Roboto Mono', monospace;
-
-
+  /* fonts style components */
+  --button-mobile-font-size: 14px;
+  --button-tablet-web-font-size: 16px;
+  --button-font: var(--robotoMono-font-family);
 }

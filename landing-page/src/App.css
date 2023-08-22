@@ -1,7 +1,9 @@
 @import './styles/colors.css';
 @import './styles/fonts.css';
+
 body {
   max-width: 1920px;
+  min-width: 375px;
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  /*  */
+
   color: var(--white-color);
 }
 
@@ -31,6 +33,11 @@ button {
   border: none;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: #272A2EE5;
+}
+
 @media (max-width: 768px) {
 
 }

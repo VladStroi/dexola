@@ -4,13 +4,13 @@ import arrow from "./arrow.png";
 
 export const Header = () => {
   return (
-    <header className={styles.header} style={{padding: "15px 120px"}}>
-      <div className="">
+    <header className={styles.header} >
+      <div >
         <a href="https://dexola.com/" target="_blank">
           <img src={logo} alt="logo" />
         </a>
       </div>
-      <div className="">
+      <div>
         <button >
           <img className={styles.arrowImg} src={arrow} alt="logo" />
           <span className={styles.buttonName}>
