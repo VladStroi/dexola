@@ -1,10 +1,13 @@
 import styles from "./header.module.css";
 import logo from "./logo.png";
 import arrow from "./arrow.png";
+import { StatusBar } from "./stutus-bar";
 
 export const Header = () => {
   return (
-    <header className={styles.header} >
+    <>
+    <StatusBar/>
+    <header className={styles.header}>
       <div >
         <a href="https://dexola.com/" target="_blank">
           <img src={logo} alt="logo" />
@@ -19,5 +22,6 @@ export const Header = () => {
         </button>
       </div>
     </header>
+    </>
   );
 };

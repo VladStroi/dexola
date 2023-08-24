@@ -2,7 +2,6 @@
 @import "./../../styles/colors.css";
 
 .blockInfo {
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -10,9 +9,7 @@
 }
 
 /* text web adaptive */
-
 .textConteiner {
-  /* position: relative; */
   width: calc(55% - 10px);
   height: auto;
 
@@ -23,13 +20,15 @@
   font-family: var(--body-web-font);
   font-size: var(--body-web-font-size);
   color: var(--color-font);
+  order: 2;
 }
 
+/* hero animation img */
 .imageSlider {
   display: flex;
   width: 470px;
   max-width: calc(45% - 20px);
-  top: 78px;
+  order: 3;
 }
 
 .firstImageSlider,
@@ -71,19 +70,20 @@
   opacity: 1;
 }
 
+/* running "DEXOLA CAMP */
+
 .runningText {
   height: 426px;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  order: 5;
   position: relative;
 
   font-family: var(--kanit-font-family);
   font-weight: var(--font-weight-medium);
   font-size: 340px;
-
   line-height: 426px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -95,6 +95,24 @@
 }
 
 /* blue lines */
+
+.lineTop,
+.lineBottom {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  background-color: var(--accent-blue-color);
+}
+
+.lineTop {
+  top: 1px;
+  order: 1;
+}
+
+.lineBottom {
+  top: -1px;
+  order: 4;
+}
 
 /* ranning text with animation */
 
@@ -109,13 +127,14 @@
 
 @media (max-width: 768px) {
   .blockInfo {
-    flex-wrap: wrap;
-    padding: 0 32px;
+    padding: 0 24px;
+    border-top: 0;
   }
 
   .imageSlider {
     display: flex;
     width: 100%;
+
     max-width: calc(100%);
     margin-top: 9px;
     order: 1;
@@ -128,11 +147,33 @@
 
   .textConteiner {
     width: 100%;
+    padding: clamp(0px, 159px, 5px) 0 clamp(30px, 0px, 15px) 0;
+    padding: 0 32px 0 0;
+
     font-size: var(--body-tablet-font-size);
     order: 3;
   }
   .runningText {
     order: 2;
     font-size: 280px;
+    height: 351px;
+    line-height: 351px;
+  }
+
+  .lineTop,
+  .lineBottom {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .textConteiner {
+    font-size: var(--body-mobile-font-size);
+    padding: 0;
+  }
+  .runningText {
+    font-size: 120px;
+    height: 150px;
+    line-height: 150px;
   }
 }

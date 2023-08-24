@@ -1,6 +1,6 @@
 import "./App.css";
 import { Header } from "./sections/header/header";
-import { HeroSection } from "./sections/welcome-page/hero";
+import { HeroSection } from "./sections/hero-page/hero";
 
 function App() {
   return (

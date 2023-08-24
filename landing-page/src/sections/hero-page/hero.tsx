@@ -25,6 +25,8 @@ export const HeroSection = () => {
   return (
     <>
       <section className={styles.blockInfo}>
+        <div className={styles.lineTop}></div>
+
         <div className={styles.textConteiner}>
           <p>
             Prepare to be transported beyond the boundaries of traditional
@@ -58,6 +60,7 @@ export const HeroSection = () => {
             ))}
           </div>
         </div>
+        <div className={styles.lineBottom}></div>
         <div className={styles.runningText}></div>
       </section>
     </>
