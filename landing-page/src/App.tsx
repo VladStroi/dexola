@@ -1,5 +1,6 @@
 import "./App.css";
-import { Header } from "./sections/header/header";
+import { Footer } from "./sections/header and footer/footer/footer";
+import { Header } from "./sections/header and footer/header/header";
 import { HeroSection } from "./sections/hero-page/hero";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <HeroSection />
+      <Footer/>
     </>
   );
 }

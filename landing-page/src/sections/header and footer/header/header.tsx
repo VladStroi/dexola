@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import logo from "./logo.png";
 import arrow from "./arrow.png";
-import { StatusBar } from "./stutus-bar";
+import { StatusBar } from "./../status-bar/stutus-bar";
 
 export const Header = () => {
   return (

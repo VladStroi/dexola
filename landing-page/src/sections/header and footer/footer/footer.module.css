@@ -1,0 +1,145 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 50px;
+  color: var(--white, #fff);
+  font-size: var(--body-web-font-size);
+  font-family: var(--body-web-font);
+  border: 0;
+}
+
+.footer section {
+  box-sizing: border-box;
+  flex: 1;
+  letter-spacing: -0.36px;
+}
+
+.design,
+.icons,
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.design {
+  padding: 10px 16px 10px 120px;
+  order: 1;
+  border-top: 1px solid var(--accent-blue-color);
+  border-left: 1px solid var(--accent-blue-color);
+  border-bottom: 1px solid var(--accent-blue-color);
+}
+
+.icons {
+  padding: 0 20px;
+  order: 2;
+  border: 1px solid var(--accent-blue-color);
+}
+
+.icons :only-child {
+  padding: 0 20px;
+}
+
+.copyright {
+  padding: 10px 120px 10px 16px;
+  order: 3;
+  border-top: 1px solid var(--accent-blue-color);
+  border-right: 1px solid var(--accent-blue-color);
+  border-bottom: 1px solid var(--accent-blue-color);
+}
+
+.design p,
+.copyright p {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: var(--light-grey-color);
+    font-size: var(--body-tablet-font-size);
+    border-top: 1px solid var(--accent-blue-color);
+  }
+
+  .footer :first-child,
+  .footer :last-child {
+    justify-content: start;
+  }
+
+  .design {
+    align-items: end;
+    width: 50%;
+    height: 50px;
+    padding: 10px 16px 0 24px;
+    order: 1;
+    border: 0;
+  }
+
+  .icons {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100px;
+    padding: 0px 24px;
+
+    order: 2;
+    border: 0;
+  }
+
+  .icons :only-child {
+    padding: 0 12px;
+  }
+
+  .copyright {
+    align-items: start;
+    width: 50%;
+    height: 50px;
+    padding: 0 16px 10px 24px;
+    order: 3;
+    border: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    height: 100px;
+    font-size: var(--body-mobile-font-size);
+  }
+
+  .design {
+    width: 100%;
+
+    padding: 0;
+    order: 2;
+    border: 0;
+  }
+
+  .icons {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    padding: 12px 0;
+
+    order: 1;
+    border: 0;
+  }
+
+  .icons :only-child {
+    padding: 0 16px;
+  }
+
+  .copyright {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    order: 3;
+    border: 0;
+  }
+}
