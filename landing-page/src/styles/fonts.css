@@ -17,15 +17,13 @@
 
   /* fonts style and size in title */
 
-  --title-tablet-font: var(--kanit-font-family);
-  --title-mobile-font: var(--kanit-font-family);
+  --title-font: var(--kanit-font-family);
+  --title-web-font-size: 140px;
   --title-tablet-font-size: 112px;
   --title-mobile-font-size: 48px;
 
   /* fonts style and size in subTitle */
-  --subTitle-web-font: var(--kanit-font-family);
-  --subTitle-tablet-font: var(--kanit-font-family);
-  --subTitle-mobile-font: var(--kanit-font-family);
+  --subTitle-font: var(--kanit-font-family);
   --subTitle-web-font-size: 24px;
   --subTitle-tablet-font-size: 20px;
   --subTitle-mobile-font-size: 18px;

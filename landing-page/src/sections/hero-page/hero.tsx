@@ -24,7 +24,7 @@ export const HeroSection = () => {
 
   return (
     <>
-      <section className={styles.blockInfo}>
+      <section className={styles.blockHero}>
         <div className={styles.lineTop}></div>
 
         <div className={styles.textConteiner}>

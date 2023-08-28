@@ -1,0 +1,60 @@
+/* TODO position h3 subtitle top */
+
+.blockFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 120px;
+}
+
+.discription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 90px auto;
+  position: relative;
+}
+
+.discription p {
+  max-width: 601px;
+  height: auto;
+  text-align: left;
+  letter-spacing: -0.36px;
+  color: var(--light-grey-color);
+  font-size: var(--body-web-font-size);
+  font-family: var(--body-web-font);
+}
+
+.discription h3 {
+  width: 189px;
+  text-align: left;
+  letter-spacing: -0.48px;
+  color: var(--color-font);
+  font-size: var(--subTitle-web-font-size);
+  font-family: var(--subTitle-font);
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .blockFeatures {
+    padding: 0 24px;
+  }
+  .discription p {
+    font-size: var(--body-tablet-font-size);
+  }
+  .discription h3 {
+    font-size: var(--subTitle-tablet-font-size);
+  }
+}
+
+@media (max-width: 480px) {
+    
+  .discription {
+    flex-direction: column;
+  }
+  .discription p {
+    font-size: var(--body-tablet-font-size);
+  }
+  .discription h3 {
+    font-size: var(--subTitle-mobile-font-size);
+  }
+}

@@ -1,7 +1,5 @@
-@import "./../../styles/fonts.css";
-@import "./../../styles/colors.css";
 
-.blockInfo {
+.blockHero {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -89,6 +87,7 @@
 
 .runningText::before {
   content: "DEXOLA CAMP";
+
   white-space: nowrap;
   position: absolute;
   animation: slide 10s linear infinite;
@@ -126,7 +125,7 @@
 }
 
 @media (max-width: 768px) {
-  .blockInfo {
+  .blockHero {
     padding: 0 24px;
     border-top: 0;
   }
