@@ -10,8 +10,7 @@
 }
 
 h1, h2 {
-  /* font-size: var(--title-web-font-size); */
-  font-size: var(--title-web-font-size);
+  font-size: clamp(var(--title-tablet-font-size), 12vw, var(--title-web-font-size));;
   color: var(--color-font);
   font-family: var(--title-font);
   font-weight: var(--font-weight-regular);
@@ -22,7 +21,7 @@ h1, h2 {
 
 @media (max-width: 768px) {
   h1, h2 {
-    font-size: var(--title-tablet-font-size);
+    font-size: clamp(var(--title-mobile-font-size), 12vw, var(--title-tablet-font-size));;
   }
 }
 

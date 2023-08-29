@@ -15,7 +15,7 @@
   align-items: end;
   padding: clamp(0px, 159px, 5px) 0 clamp(30px, 0px, 15px) clamp(24px, 0px, 0px);
   text-align: left;
-  font-family: var(--body-web-font);
+  font-family: var(--body-font);
   font-size: var(--body-web-font-size);
   color: var(--color-font);
   order: 2;

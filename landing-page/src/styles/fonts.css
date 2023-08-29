@@ -29,9 +29,7 @@
   --subTitle-mobile-font-size: 18px;
 
   /* fonts style and size in body */
-  --body-web-font: var(--robotoMono-font-family);
-  --body-tablet-font: var(--robotoMono-font-family);
-  --body-mobile-font: var(--robotoMono-font-family);
+  --body-font: var(--robotoMono-font-family);
   --body-web-font-size: 18px;
   --body-tablet-font-size: 16px;
   --body-mobile-font-size: 14px;
