@@ -1,0 +1,53 @@
+.mobile {
+    padding: 16px 24px ;
+    width: 100%;
+    border-bottom: 1px solid var(--accent-blue-color);
+  }
+  
+  .mobile:nth-child(2n + 1) {
+    background: #080b27;
+  }
+  
+  .mobile thead th {
+    letter-spacing: 140%;
+    font-family: var(--subTitle-font);
+    font-size: var(--subTitle-mobile-font-size);
+    font-weight: var(--font-weight-medium);
+    padding-bottom: 12px;
+  }
+  
+  .mobile thead tr :first-child {
+    text-align: left;
+  }
+  .mobile thead tr :last-child {
+    text-align: right;
+  }
+  
+  .mobile tbody td {
+    letter-spacing: -0.28px;
+    color: var(--light-grey-color);
+    font-family: var(--body-font);
+    font-size: var(--body-mobile-font-size);
+    font-weight: var(--font-weight-regular);
+  }
+  .mobile tbody td p {
+    padding: 2px 0;
+  }
+  .mobile .image {
+    width: 64px;
+  }
+  
+  .mobile .image img {
+    /* width: 64px; */
+    /* height: 64px; */
+    border-radius: 50%;
+  }
+  
+  .indexes {
+    padding-left: 16px;
+    text-align: left;
+  }
+
+  .statistics{
+    text-align: right;
+  }

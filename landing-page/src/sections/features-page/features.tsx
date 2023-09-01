@@ -1,6 +1,6 @@
 import { SectionsTitle } from "../../components/sections-title/sections-title";
 import { Card } from "./card/card";
-import { mockData } from "./fetch mock/mock-data";
+import { fetchFeaturesData } from "./fetch-mock/features-mock";
 import styles from "./features.module.css";
 
 type CardData = {
@@ -23,8 +23,8 @@ export const Features = () => {
         </p>
       </div>
       <section className={styles.cards}>
-        {mockData.map((cards: CardData) => (
-          <Card id={cards.id} img={cards.img} name={cards.name} description={cards.description}/>
+        {fetchFeaturesData.map((cards: CardData) => (
+          <Card key={cards.id} id={cards.id} img={cards.img} name={cards.name} description={cards.description}/>
           ))}
       </section>
     </section>

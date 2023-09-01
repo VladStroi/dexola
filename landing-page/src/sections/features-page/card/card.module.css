@@ -21,6 +21,7 @@
 .nameCard h3 {
   display: flex;
   align-items: start;
+  text-align: left;
   margin: 0 16px 16px 0;
   line-height: 140%;
   color: var(--white-color);
@@ -70,6 +71,7 @@
   .nameCard h2,
   .nameCard h3 {
     margin: 0;
+    text-align: left;
     line-height: 140%;
     font-size: var(--subTitle-tablet-font-size);
   }
@@ -87,7 +89,7 @@
 
   .card {
     max-width: calc(100% - 2px);
-    margin: 16px 0;
+    margin: 16px auto;
   }
 
   .nameCard {
