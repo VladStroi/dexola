@@ -1,9 +1,6 @@
-/* TODO position h3 subtitle top */
-
 .blockFeatures {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 120px;
 }
 
 .description {
@@ -11,7 +8,9 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 90px auto;
+  align-items: center;
   position: relative;
+  padding: 0 120px;
 }
 
 .description p {
@@ -35,19 +34,19 @@
   padding-right: 24px;
 }
 
-
 .cards {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 120px;
 }
 
-
 @media (max-width: 768px) {
-  .blockFeatures {
+  .description {
     padding: 0 24px;
+    margin: 40px auto;
   }
   .description p {
     font-size: var(--body-tablet-font-size);
@@ -55,10 +54,13 @@
   .description h3 {
     font-size: var(--subTitle-tablet-font-size);
   }
+  .cards {
+    width: calc(100% - 48px);
+    padding: 0 24px;
+  }
 }
 
 @media (max-width: 480px) {
-
   .description {
     flex-direction: column;
   }
@@ -68,7 +70,7 @@
   .description h3 {
     font-size: var(--subTitle-mobile-font-size);
   }
-  .cards{
+  .cards {
     flex-direction: column;
   }
 }

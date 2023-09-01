@@ -5,8 +5,12 @@
   border: 1px solid var(--accent-blue-color);
 }
 
+.image img {
+  width: auto;
+}
+
 .image {
-  position: relative;
+  position: relative; 
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -84,14 +88,15 @@
   }
 }
 
-
 @media (max-width: 480px) {
-
   .card {
-    max-width: calc(100% - 2px);
-    margin: 16px auto;
+    width: auto;
+    max-width: calc(100%);
+    margin: 16px 0;
   }
-
+  .image img {
+    width: 100%;
+  }
   .nameCard {
     display: flex;
     flex-direction: row;
