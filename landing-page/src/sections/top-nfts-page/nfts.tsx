@@ -14,7 +14,6 @@ export const TopNFTs = () => {
     };
 
     window.addEventListener('resize', handleResize);
-    console.log((windowWidth));
     
     return () => {
       window.removeEventListener('resize', handleResize);
