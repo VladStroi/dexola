@@ -32,17 +32,17 @@ const eyeOpen = (
 );
 export const RegistrationForm = () => {
   const [email, setEmail] = useState("");
-  const [emailValid, setEmailValid] = useState(true);
+  const [emailValidation, setEmailValidation] = useState(true);
 
-  const [tel, setTel] = useState("");
-  const [telValid, setTelValid] = useState(true);
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phoneNumberValidation, setPhoneNumberValidation] = useState(true);
 
   const [password, setPassword] = useState("");
-  const [passwordConfirma, setPasswordConfirm] = useState("");
-  const [passwordValid, setPasswordValid] = useState(true);
+  const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [passwordValidation, setPasswordValidation] = useState(true);
 
   const [eyePass, setEyePass] = useState(false);
-  const [eyePassConfirm, setEyePassConf] = useState(false);
+  const [eyePassConfirm, setEyePassConfirm] = useState(false);
 
   const [passVisibility, setPassVisibility] = useState(false);
   const [passConfirmVisibility, setPassConfirmVisibility] = useState(false);
@@ -53,7 +53,7 @@ export const RegistrationForm = () => {
     setPassVisibility(!passVisibility);
   };
   const togglePasswordConfirmVisibility = () => {
-    setEyePassConf(!eyePassConfirm);
+    setEyePassConfirm(!eyePassConfirm);
     setPassConfirmVisibility(!passConfirmVisibility);
   };
 
@@ -61,19 +61,19 @@ export const RegistrationForm = () => {
   const validateEmail = () => {
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     const isValidEmail = emailRegex.test(email);
-    setEmailValid(isValidEmail);
+    setEmailValidation(isValidEmail);
   };
 
   //validate phone number
   const handlePhoneChange = (e: any) => {
     const inputValue = e.target.value;
     const formattedValue = formatPhoneNumber(inputValue);
-    setTel(formattedValue);
+    setPhoneNumber(formattedValue);
   };
   const validateTel = () => {
     const isValidPhone =
-      /^\+?\d{1,3}(\(\d{1,4}\))?\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}$/.test(tel);
-    setTelValid(isValidPhone);
+      /^\+?\d{1,3}(\(\d{1,4}\))?\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}$/.test(phoneNumber);
+    setPhoneNumberValidation(isValidPhone);
   };
   const formatPhoneNumber = (inputValue: any) => {
     const sanitizedValue = inputValue.replace(/[^0-9+() ]/g, "");
@@ -82,29 +82,29 @@ export const RegistrationForm = () => {
 
   // validate password
   const validatePassword = () => {
-    setPasswordValid(
+    setPasswordValidation(
       password.length >= 4 &&
-        passwordConfirma.length >= 4 &&
-        password === passwordConfirma
+        passwordConfirm.length >= 4 &&
+        password === passwordConfirm
     );
   };
 
   //send form
   const sendForm = () => {
     if (
-      emailValid &&
-      telValid &&
-      passwordValid &&
+      emailValidation &&
+      phoneNumberValidation &&
+      passwordValidation &&
       email !== "" &&
-      tel !== "" &&
+      phoneNumber !== "" &&
       password !== "" &&
-      passwordConfirma !== ""
+      passwordConfirm !== ""
     ) {
       alert("Form sended!");
     } else {
-      setEmailValid(false);
-      setTelValid(false);
-      setPasswordValid(false);
+      setEmailValidation(false);
+      setPhoneNumberValidation(false);
+      setPasswordValidation(false);
     }
   };
 
@@ -115,7 +115,7 @@ export const RegistrationForm = () => {
         <div className={styles.inputContainer}>
           <div
             className={`${styles.inputBlockEmail} ${
-              !emailValid ? styles.valid : ""
+              !emailValidation ? styles.valid : ""
             }`}
           >
             <span className={styles.asterisk}>*</span>
@@ -133,7 +133,7 @@ export const RegistrationForm = () => {
           </div>
           <p
             className={`${styles.errorEmail} ${
-              emailValid ? styles.errorEmailVisibility : ""
+              emailValidation ? styles.errorEmailVisibility : ""
             }`}
           >
             Is not valid email
@@ -144,7 +144,7 @@ export const RegistrationForm = () => {
         <div className={styles.inputContainer}>
           <div
             className={`${styles.inputBlockTel} ${
-              !telValid ? styles.valid : ""
+              !phoneNumberValidation ? styles.valid : ""
             }`}
           >
             <span className={styles.svg}>
@@ -195,7 +195,7 @@ export const RegistrationForm = () => {
               type="tel"
               id="phone"
               name="phone"
-              value={tel}
+              value={phoneNumber}
               onChange={handlePhoneChange}
               onBlur={validateTel}
               className={styles.input}
@@ -205,7 +205,7 @@ export const RegistrationForm = () => {
           </div>
           <p
             className={`${styles.errorTel} ${
-              telValid ? styles.errorTelVisibility : ""
+              phoneNumberValidation ? styles.errorTelVisibility : ""
             }`}
           >
             Please complete this field
@@ -216,7 +216,7 @@ export const RegistrationForm = () => {
         <div className={styles.inputContainer}>
           <div
             className={`${styles.inputBlockPass} ${
-              !passwordValid ? styles.valid : ""
+              !passwordValidation ? styles.valid : ""
             }`}
           >
             <span className={styles.asterisk}>*</span>
@@ -237,7 +237,7 @@ export const RegistrationForm = () => {
           </div>
           <p
             className={`${styles.errorPass} ${
-              passwordValid ? styles.errorPassVisibility : ""
+              passwordValidation ? styles.errorPassVisibility : ""
             }`}
           >
             Please complete this field
@@ -265,7 +265,7 @@ export const RegistrationForm = () => {
           </div>
           <p
             className={`${styles.errorPass} ${
-              passwordValid ? styles.errorPassVisibility : ""
+              passwordValidation ? styles.errorPassVisibility : ""
             }`}
           >
             Please complete this field

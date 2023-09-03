@@ -64,7 +64,7 @@
 .asterisk {
   display: flex;
   align-items: center;
-  color: #eb3795;
+  color: var(--warning-rose-color);
   line-height: 24px;
 }
 
@@ -93,7 +93,7 @@
 
 /* VALIDATION */
 .valid {
-  border-bottom: 1px solid #eb3795;
+  border-bottom: 1px solid var(--warning-rose-color);
 }
 
 .errorEmail,
@@ -101,7 +101,7 @@
 .errorPass {
   height: 28px;
   text-align: left;
-  color: #eb3795;
+  color: var(--warning-rose-color);
   font-family: Roboto Mono;
   font-size: 13px;
   font-style: normal;

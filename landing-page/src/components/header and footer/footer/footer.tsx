@@ -8,16 +8,16 @@ export const Footer = () => {
         <p>Designed by Dexola - 2023</p>
       </section>
       <section className={styles.icons}>
-        <a href="https://uk-ua.facebook.com/">
+        <a href="https://www.instagram.com/" target="_blank">
           <img src={fetchIcon.instagram} alt="img" />
         </a>
-        <a href="https://uk-ua.facebook.com/">
+        <a href="https://uk-ua.facebook.com/" target="_blank">
           <img src={fetchIcon.facebook} alt="img" />
         </a>
-        <a href="https://uk-ua.facebook.com/">
+        <a href="https://discord.com/" target="_blank">
           <img src={fetchIcon.discord} alt="img" />
         </a>
-        <a href="https://uk-ua.facebook.com/">
+        <a href="https://telegram.org/" target="_blank">
           <img src={fetchIcon.telegram} alt="img" />
         </a>
       </section>
