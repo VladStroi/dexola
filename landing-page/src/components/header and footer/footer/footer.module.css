@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 1440px;
   margin-top: 50px;
-  color: var(--white, #fff);
+  color: var(--color-font);
   font-size: var(--body-web-font-size);
   font-family: var(--body-font);
   border: 0;

@@ -23,7 +23,6 @@ export const HeroSection = () => {
   }, [starSecondAnimation]);
 
   return (
-    <>
       <section className={styles.blockHero}>
         <div className={styles.lineTop}></div>
 
@@ -63,6 +62,5 @@ export const HeroSection = () => {
         <div className={styles.lineBottom}></div>
         <div className={styles.runningText}></div>
       </section>
-    </>
   );
 };
