@@ -90,7 +90,10 @@ export const RegistrationForm = () => {
   };
 
   //send form
-  const sendForm = () => {
+  const sendForm = (e: any) => {
+
+    e.preventDefault()
+
     if (
       emailValidation &&
       phoneNumberValidation &&
@@ -102,9 +105,9 @@ export const RegistrationForm = () => {
     ) {
       alert("Form sended!");
     } else {
-      setEmailValidation(false);
-      setPhoneNumberValidation(false);
-      setPasswordValidation(false);
+      !emailValidation ? setEmailValidation(false) : '';
+      !phoneNumberValidation ? setPhoneNumberValidation(false) : '';
+      !passwordValidation ? setPasswordValidation(false) : '';
     }
   };
 

@@ -1,0 +1,130 @@
+.animation {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gadient {
+  position: absolute;
+  top: 35%;
+  width: 80vw;
+  height: 50vh;
+  background: rgb(8, 0, 125);
+  filter: blur(50px);
+  z-index: -1;
+  animation: up 5s ease forwards; 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--accent-blue-color);
+  border-radius: 50%;
+  width: 70vw;
+  height: 70vh;
+}
+
+.content h1,
+.content h2 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--color-font);
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+
+  /* Title 1 */
+}
+
+.content h2 {
+  line-height: 140%; /* 33.6px */
+  font-size: 24px;
+}
+
+.content h1 {
+  font-size: 64px;
+  line-height: 125.4%;
+}
+
+.ellipse1,
+.ellipse2,
+.ellipse3,
+.ellipse4,
+.ellipse5,
+.ellipse6 {
+  border: 5px solid var(--accent-blue-color);
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(0.1);
+  opacity: 0;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+  animation-name: moveEllipce;
+}
+
+.ellipse1 {
+  width: 100%;
+  height: 70%;
+}
+.ellipse2 {
+  width: 90%;
+  height: 60%;
+}
+.ellipse3 {
+  width: 80%;
+  height: 50%;
+}
+
+.ellipse4 {
+  width: 70%;
+  height: 40%;
+}
+
+.ellipse5 {
+  width: 60%;
+  height: 30%;
+}
+
+.ellipse6 {
+  width: 10%;
+  height: 25%;
+}
+
+.fadeIn {
+  animation: fadeIn 5s ease forwards; 
+  opacity: 0; 
+}
+
+@keyframes up {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveEllipce {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+

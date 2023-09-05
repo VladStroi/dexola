@@ -67,7 +67,7 @@
   margin: 0 4px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .nameCard {
     display: flex;
     flex-direction: column;

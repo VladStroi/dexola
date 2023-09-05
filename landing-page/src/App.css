@@ -38,11 +38,6 @@ button:hover {
   background-color: #272A2EE5;
 }
 
-@media (max-width: 768px) {
-
-}
-
-
 @media (max-width: 480px) {
   button {
     width: 136px;
